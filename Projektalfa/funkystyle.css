@@ -1,0 +1,204 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+a:visited {
+    color: #51f80a;
+}
+
+body {
+    background-color: lightpink;
+}
+
+
+
+
+
+
+
+.container {
+    flex-basis: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    flex-flow: wrap;
+}
+
+.maincontainer {
+    flex-basis: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    
+    justify-content: end;
+}
+
+.start {
+    font-size: 3em;
+    font-family: 'Kristi', cursive;
+    display: inline-flex;
+}
+
+.text-box1 {
+    position: relative;
+    top: 70%;
+    transform: perspective(1px) translateY(-50%);
+}
+
+
+
+.text-box2 {
+    position: relative;
+    top: 70%;
+    transform: perspective(1px) translateY(-50%);
+}
+
+
+.main-header {
+    font-size: 10em;
+    font-family: 'Princess Sofia', cursive;
+    text-align: center;
+}
+
+
+.buttonbox {
+    display: grid;
+    grid-column-end: auto;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+
+
+.box1 {
+    flex-basis: 40%;
+    height: auto;
+    box-sizing: border-box;
+    order: 1;
+    text-align: center;
+    flex: 1;
+}
+
+.box2 {
+    flex-basis: 40%;
+    height: auto;
+    box-sizing: border-box;
+    order: 0;
+    text-align: center;
+    flex: 1;
+}
+
+.box1b {
+    flex-basis: 40%;
+    height: auto;
+    margin: 20px;
+    box-sizing: border-box;
+    order: 1;
+    text-align: center;
+    flex: 1;
+}
+
+.box2b {
+    flex-basis: 40%;
+    height: auto;
+    margin: 20px;
+    box-sizing: border-box;
+    order: 0;
+    text-align: start;
+    flex: 1;
+}
+
+.box1d {
+    flex-basis: 40%;
+    height: auto;
+    margin: 20px;
+    box-sizing: border-box;
+    order: 1;
+    text-align: center;
+    flex: 1;
+}
+
+.box2d {
+    flex-basis: 40%;
+    height: auto;
+    margin: 20px;
+    box-sizing: border-box;
+    order: 0;
+    text-align: start;
+    flex: 1;
+}
+
+
+.picture {
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://dg6xfr3y1xvv2.cloudfront.net/berkley-unicorn-MAIN-58a39e9e4145c-1500.jpg);
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+ul {
+    list-style: none;
+}
+
+.frame {
+    object-fit: contain;
+}
+
+.facts {
+    font-family: 'Butterfly Kids', cursive;
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .box1b {
+        flex-basis: 70%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .box2b {
+        flex-basis: 70%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .box1d {
+        flex-basis: 70%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .box2d {
+        flex-basis: 70%;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .start {
+        flex-basis: 90%;
+    }
+}
